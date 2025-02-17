@@ -25,7 +25,7 @@ class DosenController extends Controller
             'nama' => 'required',
             'jabatan' => 'required',
             'alamat' => 'required',
-            'gambar' => 'required|image|mimes:jpeg,png,jpg|max:2048' 
+            'gambar' => 'image|mimes:jpeg,png,jpg|max:2048' 
         ]);
 
         $validated['gambar'] = $request->file('gambar')->store('img_dosen', 'public');

@@ -3,7 +3,7 @@
 @section('title', 'Tambah Dosen')
 
 @section('content')
-    <h2>Tambah Mahasiswa</h2>
+    <h2>Tambah Dosen</h2>
 
     <form action="{{ route('dosen.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -21,7 +21,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Gambar</label>
-            <input type="file" class="form-control" name="gambar" required>
+            <input type="file" class="form-control" name="gambar">
         </div>
         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>

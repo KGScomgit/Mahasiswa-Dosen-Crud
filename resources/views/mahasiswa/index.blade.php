@@ -3,7 +3,7 @@
 @section('title', 'Daftar Mahasiswa')
 
 @section('content')
-    <h2>Daftar Mahasiswa</h2>
+    <br><center><h2>Daftar Mahasiswa</h2></center>
 
     <a href="{{ route('mahasiswa.create') }}" class="btn btn-primary mb-3">+ Tambah Data</a>
 
